@@ -31,7 +31,7 @@ The XMR analysis comprises two main steps:
 - **Step 1:** Prepare data and estimate background parameters (the C matrix and Omega matrix via cross-population LD score regression).
 - **Step 2:** Fit XMR for causal inference.
 
-The tutorial: [An MR analysis example with XMR package](https://github.com/YangLabHKUST/XMR/blob/main/XMR_tutorial_LDLC_MI.html) provides details for each step.
+For a step-by-step walkthrough, see the [XMR tutorial: causal effect of LDLC on MI](https://htmlpreview.github.io/?https://github.com/YangLabHKUST/XMR/blob/main/XMR_tutorial_LDLC_MI.html) ([download link](https://github.com/YangLabHKUST/XMR/blob/main/XMR_tutorial_LDLC_MI.html)).
 
 For a quick start, you can skip Step 1 and proceed directly to Step 2 using the example data we have prepared.
 
