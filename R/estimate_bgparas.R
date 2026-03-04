@@ -1,4 +1,4 @@
-#' Estimate XMAP background parameters via two-stage bivariate LDSC
+#' Estimate XMR background parameters via two-stage bivariate LDSC
 #'
 #' @param ldscore0 A data.frame of LD scores.
 #' @param exposure_code Character. Exposure trait code, e.g. "30780".
