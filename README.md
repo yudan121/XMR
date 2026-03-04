@@ -19,7 +19,7 @@ XMR further corrects bias introduced by IV selection and LD clumping to reduce f
 
 ```r
 # install.packages("devtools")
-devtools::install_github("yudan121/XMR")
+devtools::install_github("YangLabHKUST/XMR")
 ```
 
 ## Usage
