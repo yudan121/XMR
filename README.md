@@ -9,7 +9,7 @@ XMR further corrects bias introduced by IV selection and LD clumping to reduce f
 
 <img width="2314" height="1484" alt="649dc9cb-1" src="https://github.com/user-attachments/assets/1c59e233-90c5-4ffc-b6dc-a6c8db2b2335" />
 
-**Figure 1: Overview of the XMR method.** XMR estimates the causal effect $\beta$ between exposure $X_2$ and outcome $Y_2$ in a small-sample population by leveraging data on the same exposure $X_1$ from a large-sample population. The method involves several key elements:
+**Overview of the XMR method.** XMR estimates the causal effect $\beta$ between exposure $X_2$ and outcome $Y_2$ in a small-sample population by leveraging data on the same exposure $X_1$ from a large-sample population. The method involves several key elements:
 **(A)** IVs are selected from the large-sample population ($X_1$) to improve power compared to the limited IVs available from the small-sample population ($X_2$). The distributions of observed $-\log_{10}(p)$ values for SNP–exposure associations across chromosomes are shown.
 **(B)** The XMR model diagram. Arrowed lines represent directed effects. The blue dashed line indicates the correlation between $X_1$ and $X_2$.
 **(C)** Selection bias and confounding factors contribute to the observed SNP–trait associations.
