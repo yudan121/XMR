@@ -13,7 +13,7 @@ XMR further corrects bias introduced by IV selection and LD clumping to reduce f
 **(A)** IVs are selected from the large-sample population ($X_1$) to improve power compared to the limited IVs available from the small-sample population ($X_2$). The distributions of observed $-\log_{10}(p)$ values for SNP–exposure associations across chromosomes are shown.
 **(B)** The XMR model diagram. Arrowed lines represent directed effects. The blue dashed line indicates the correlation between $X_1$ and $X_2$.
 **(C)** Selection bias and confounding factors contribute to the observed SNP–trait associations.
-**(D)** An illustrative example of causal inference between SHBG (sex hormone-binding globulin) and T2D (type 2 diabetes) in an African population, using conventional two-sample MR methods (left) and XMR (right). The estimated causal effect is shown as a red line, with the 95% confidence interval shaded in transparent red. Triangles represent observed SNP effect sizes ($\hat{\gamma}_{2,j}$ and $\hat{\Gamma}_{2,j}$), colored by their posterior probability of IV validity ($Z_j = 1$ in dark blue; $Z_j = 0$ in light blue).
+**(D)** An illustrative example of causal inference between SHBG (sex hormone-binding globulin) and T2D (type 2 diabetes) in an African population, using conventional two-sample MR methods (left) and XMR (right). The estimated causal effect is shown as a red line, with the 95% confidence interval shaded in transparent red. Triangles represent observed SNP effect sizes ($\hat{\gamma}\_{2,j}$ and $\hat{\Gamma}\_{2,j}$), colored by their posterior probability of IV validity ($Z_j = 1$ in dark blue; $Z_j = 0$ in light blue).
 *Figure created with [BioRender.com](https://www.biorender.com/), with permission.*
 
 ## Installation
@@ -100,4 +100,4 @@ Xinrui Huang, Zitong Chao, Zhiwei Wang, Xianghong Hu, and Can Yang. *XMR: A cros
 
 ## Contact
 
-Please feel free to contact [Xinrui Huang](mailto:xhuangcn@connect.ust.hk), [Prof. Xianghong Hu](mailto:huxh@szu.edu.cn), or [Prof. Can Yang](mailto:macyang@ust.hk) if you have any questions.
+Please feel free to contact Xinrui Huang (xhuangcn@connect.ust.hk), Prof. Xianghong Hu (huxh@szu.edu.cn), or Prof. Can Yang (macyang@ust.hk) if you have any questions.
