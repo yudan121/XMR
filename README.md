@@ -130,7 +130,7 @@ Coming soon
 
 ### Setup
 
-Dta and results related to the above experiments are publicly available. See **Step 2** for download links. Follow below steps for reproduction:
+Data and results related to the above experiments are publicly available. See **Step 2** for download links. Follow below steps for reproduction:
 
 #### 1. Clone this repository
 ```bash
