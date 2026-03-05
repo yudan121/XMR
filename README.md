@@ -91,48 +91,51 @@ The input `data` should be a data.frame containing the following columns:
 
 Both can be estimated using bivariate LD score regression.
 
+
 ## Reproducibility
 
-We applied XMR and 15 existing summary-level MR methods to
-- simulations;
-- test the causal effects of 35 traits on 2 negative control outcomes (Skin tanning ability, Natural hair color) in Africans (AFR) and Central/South Asians (CSA);
-- infer causal relationships in 3 underrepresented populations: East Asians, Central/South Asians and Africans.
+We applied XMR and 15 existing summary-level MR methods to:
+- **Simulations**
+- **Negative-control studies**: testing the causal effects of 35 traits on 2 negative-control outcomes (skin tanning ability, natural hair color) in Africans (AFR) and Central/South Asians (CSA)
+- **Real-data analysis**: inferring causal relationships in 3 underrepresented populations — East Asians (EAS), Central/South Asians (CSA), and Africans (AFR)
 
-We provide [source codes](https://github.com/YangLabHKUST/XMR_reproduce) for replicating the simulation and real data analysis results in the XMR paper.
+Source code and data for reproducing all results are available at [YangLabHKUST/XMR_reproduce](https://github.com/YangLabHKUST/XMR_reproduce).
 
-**Simulation:**
-[Experiments and visualization](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/sim/code/simulation_reproduce_plot.ipynb).
+**Simulations:**
+
+[Experiments and visualization](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/sim/code/simulation_reproduce_plot.ipynb)
 
 **Negative-control studies:**
 
-[Format data](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/nc/code/format_data.ipynb);
-[XMR in AFR](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/nc/code/run_XMR_AFR.ipynb);
-[XMR in CSA](http://github.com/YangLabHKUST/XMR_reproduce/blob/main/nc/code/run_XMR_CSA.ipynb);
-[Other methods in AFR](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/nc/code/run_other_AFR.ipynb);
-[Other methods in CSA](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/nc/code/run_other_CSA.ipynb);
-[Visualization](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/nc/code/nc-plot.ipynb).
+[Format data](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/nc/code/format_data.ipynb) |
+[XMR in AFR](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/nc/code/run_XMR_AFR.ipynb) |
+[XMR in CSA](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/nc/code/run_XMR_CSA.ipynb) |
+[Other methods in AFR](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/nc/code/run_other_AFR.ipynb) |
+[Other methods in CSA](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/nc/code/run_other_CSA.ipynb) |
+[Visualization](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/nc/code/nc-plot.ipynb)
 
 **Real-data analysis for EAS:**
 
-[Format data](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/real_data_EAS/code/format_data.ipynb);
-[XMR in BBJ](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/real_data_EAS/code/run_XMR_BBJ.ipynb); 
-[XMR in TPMI](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/real_data_EAS/code/run_XMR_TPMI.ipynb);
-[Other methods in BBJ](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/real_data_EAS/code/run_other_BBJ.ipynb);
-[Other methods in TPMI](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/real_data_EAS/code/run_other_TPMI.ipynb);
-[Visualization](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/real_data_EAS/code/EAS-plot.ipynb).
+[Format data](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/real_data_EAS/code/format_data.ipynb) |
+[XMR in BBJ](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/real_data_EAS/code/run_XMR_BBJ.ipynb) |
+[XMR in TPMI](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/real_data_EAS/code/run_XMR_TPMI.ipynb) |
+[Other methods in BBJ](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/real_data_EAS/code/run_other_BBJ.ipynb) |
+[Other methods in TPMI](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/real_data_EAS/code/run_other_TPMI.ipynb) |
+[Visualization](https://github.com/YangLabHKUST/XMR_reproduce/blob/main/real_data_EAS/code/EAS-plot.ipynb)
 
-**Real-data analysis for CSA:**
-Coming soon
+**Real-data analysis for CSA:** Coming soon
 
-**Real-data analysis for AFR:**
-Coming soon
+**Real-data analysis for AFR:** Coming soon
 
 
 ### Setup
 
-Data and results related to the above experiments are publicly available. See **Step 2** for download links. Follow below steps for reproduction:
+All data and results needed to reproduce the above experiments are publicly available.
+See **Step 2** for download links.
+Follow below steps for reproduction:
 
 #### 1. Clone this repository
+
 ```bash
 git clone https://github.com/YangLabHKUST/XMR_reproduce.git
 cd XMR_reproduce
@@ -150,24 +153,35 @@ XMR_reproduce/
 
 #### 2. Download data
 
-Download the following archives, place them in the repository root, and extract:
+We provide archived files containing formatted data, LD score files, analysis results, and other files needed for reproduction.
+
+**Raw GWAS summary statistics** are not included due to their large size (~8–10 GB each).
+Data sources are listed in the following tables — download the raw files, find the target folder in the above directory, place them in the corresponding `raw_data/` folder, and run `format_data.ipynb` in the target folder to format:
+
+| Experiment | Data source table |
+|------------|-------------------|
+| Negative-control studies | [`nc_data_source.csv`](https://github.com/YangLabHKUST/XMR/blob/main/nc_data_source.csv) |
+| Real-data analysis (EAS) | [`real_data_EAS_data_source.csv`](https://github.com/YangLabHKUST/XMR/blob/main/real_data_EAS_data_source.csv) |
+| Real-data analysis (AFR) | [`real_data_AFR_data_source.csv`](https://github.com/YangLabHKUST/XMR/blob/main/real_data_AFR_data_source.csv) |
+| Real-data analysis (CSA) | [`real_data_CSA_data_source.csv`](https://github.com/YangLabHKUST/XMR/blob/main/real_data_CSA_data_source.csv) |
+
+Alternatively, you can **skip the raw data step** and start directly from our pre-formatted data by downloading the archives below. Then place them in the repository root and extract:
 
 | File | Size | Link |
 |------|------|------|
+| `sim_data.tar.gz` | ~28 MB | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18872086.svg)](https://doi.org/10.5281/zenodo.18872086) |
 | `nc_data.tar.gz` | ~X GB | [Google Drive](link) |
-| `real_data_CSA_AFR_data.tar.gz` | ~X GB | Coming soon |
 | `real_data_EAS_data.tar.gz` | ~X GB | [Google Drive](link) |
-| `sim_data.tar.gz` | ~23 MB | [Zenodo link](https://doi.org/10.5281/zenodo.18872085) |
-
+| `real_data_CSA_AFR_data.tar.gz` | ~X GB | Coming soon |
 
 ```bash
-tar xzvf nc_data.tar.gz
-tar xzvf real_data_CSA_AFR_data.tar.gz
-tar xzvf real_data_EAS_data.tar.gz
 tar xzvf sim_data.tar.gz
+tar xzvf nc_data.tar.gz
+tar xzvf real_data_EAS_data.tar.gz
+tar xzvf real_data_CSA_AFR_data.tar.gz
 ```
 
-The data files will be automatically merged into the existing code directories.
+Each archive preserves the directory structure and will merge into existing directories automatically.
 
 #### 3. External resources (download separately)
 
@@ -186,7 +200,7 @@ setwd("/path/to/XMR_reproduce")  # set to your local path
 source("nc/format_data.R")
 ```
 
-To run the analysis for XMR and 15 compared methods, you need to install related packages first:
+To run XMR and the 15 compared methods, install the required R packages first:
 
 ```r
 # In R
