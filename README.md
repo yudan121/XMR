@@ -123,7 +123,7 @@ Download the following archives and place them in the repository root:
 | `nc_data.tar.gz` | ~X GB | [Google Drive](link) |
 | `real_data_CSA_AFR_data.tar.gz` | ~X GB | Coming soon |
 | `real_data_EAS_data.tar.gz` | ~X GB | [Google Drive](link) |
-| `sim_data.tar.gz` | ~X GB | [Google Drive](link) |
+| `sim_data.tar.gz` | ~23 MB | [Zenodo link](https://doi.org/10.5281/zenodo.18872085) |
 
 
 #### 3. Extract
