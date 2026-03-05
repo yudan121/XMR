@@ -128,8 +128,9 @@ Coming soon
 Coming soon
 
 
-We have also released data and results related to the abbove experiments. Follow the below setup for reproduction:
 ### Setup
+
+Dta and results related to the above experiments are publicly available. See **Step 2** for download links. Follow below steps for reproduction:
 
 #### 1. Clone this repository
 ```bash
@@ -149,7 +150,7 @@ XMR_reproduce/
 
 #### 2. Download data
 
-Download the following archives and place them in the repository root:
+Download the following archives, place them in the repository root, and extract:
 
 | File | Size | Link |
 |------|------|------|
@@ -158,8 +159,6 @@ Download the following archives and place them in the repository root:
 | `real_data_EAS_data.tar.gz` | ~X GB | [Google Drive](link) |
 | `sim_data.tar.gz` | ~23 MB | [Zenodo link](https://doi.org/10.5281/zenodo.18872085) |
 
-
-#### 3. Extract
 
 ```bash
 tar xzvf nc_data.tar.gz
@@ -170,7 +169,7 @@ tar xzvf sim_data.tar.gz
 
 The data files will be automatically merged into the existing code directories.
 
-#### 4. External resources (download separately)
+#### 3. External resources (download separately)
 
 The following large reference files may not be included in the archives due to size. Please download them manually:
 
@@ -178,7 +177,7 @@ The following large reference files may not be included in the archives due to s
 - **PLINK software**: download from [https://www.cog-genomics.org/plink2](https://www.cog-genomics.org/plink2)
 
 
-#### 5. Run the analysis
+#### 4. Run the analysis
 All scripts assume the **working directory is the repository root** (`XMR_reproduce/`).
 
 ```r
@@ -187,7 +186,7 @@ setwd("/path/to/XMR_reproduce")  # set to your local path
 source("nc/format_data.R")
 ```
 
-To run the analysis for XMR and 15 compared methods, you need to install the corresponding packages first:
+To run the analysis for XMR and 15 compared methods, you need to install related packages first:
 
 ```r
 # In R
