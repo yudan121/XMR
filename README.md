@@ -121,9 +121,9 @@ Download the following archives and place them in the repository root:
 | File | Size | Link |
 |------|------|------|
 | `nc_data.tar.gz` | ~X GB | [Google Drive](link) |
-| `real_data_CSA_AFR_data.tar.gz` | ~X GB | [Google Drive](link) |
+| `real_data_CSA_AFR_data.tar.gz` | ~X GB | Coming soon |
 | `real_data_EAS_data.tar.gz` | ~X GB | [Google Drive](link) |
-| `sim_data.tar.gz` | ~X GB | Coming soon |
+| `sim_data.tar.gz` | ~X GB | [Google Drive](link) |
 
 
 #### 3. Extract
@@ -135,8 +135,7 @@ tar xzvf real_data_EAS_data.tar.gz
 tar xzvf sim_data.tar.gz
 ```
 
-The data files will be automatically merged into the existing 
-code directories.
+The data files will be automatically merged into the existing code directories.
 
 #### 4. External resources (download separately)
 
