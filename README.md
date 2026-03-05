@@ -24,7 +24,7 @@ devtools::install_github("YangLabHKUST/XMR")
 
 ## Usage
 
-We illustrate how to perform cross-population MR analysis using XMR with a real-data example: LDL cholesterol (LDLC, exposure) and myocardial infarction (MI, outcome), with EUR as the auxiliary population and EAS as the target population.
+We illustrate how to perform cross-population MR analysis using XMR with a real-data example: LDL cholesterol (LDLC, exposure) and myocardial infarction (MI, outcome), with Europeans (EUR) as the auxiliary population and East Asians (EAS) as the target population.
 
 The XMR analysis comprises two main steps:
 
@@ -93,49 +93,70 @@ Both can be estimated using bivariate LD score regression.
 
 ## Reproducibility
 
-We applied XMR and 15 existing summary-level MR methods to (1) simulations; (2) test the causal effects of 35 traits on 2 negative control outcomes (Skin tanning ability, Natural hair color) in Africans and Central/South Asians; (3) infer causal relationships in 3 underrepresented populations: East Asians, Central/South Asians and Africans. We provide [source codes](reproduce/) for replicating the simulation and real data analysis results in the XMR paper.
+We applied XMR and 15 existing summary-level MR methods to (1) simulations; (2) test the causal effects of 35 traits on 2 negative control outcomes (Skin tanning ability, Natural hair color) in Africans (AFR) and Central/South Asians (CSA); (3) infer causal relationships in 3 underrepresented populations: East Asians, Central/South Asians and Africans. We provide [source codes](reproduce/) for replicating the simulation and real data analysis results in the XMR paper.
 
 
-## Setup
+### Setup
 
-### 1. Clone this repository
+#### 1. Clone this repository
 ```bash
 git clone https://github.com/YangLabHKUST/XMR_reproduce.git
 cd XMR_reproduce
 ```
 
-### 2. Download data
-Download `XMR_reproduce_data.tar.gz` from [Zenodo](https://doi.org/xxx) 
-and extract it into the repository root:
+#### Directory structure
+
+```
+XMR_reproduce/
+├── nc/                  # Negative-control analysis (AFR & CSA; coming soon)
+├── real_data_CSA_AFR/   # Real data analysis in CSA & AFR
+├── real_data_EAS/       # Real data analysis in EAS
+└── sim/                 # Simulations
+```
+
+#### 2. Download data
+
+Download the following archives and place them in the repository root:
+
+| File | Size | Link |
+|------|------|------|
+| `nc_data.tar.gz` | ~X GB | [Google Drive](link) |
+| `real_data_CSA_AFR_data.tar.gz` | ~X GB | [Google Drive](link) |
+| `real_data_EAS_data.tar.gz` | ~X GB | [Google Drive](link) |
+| `sim_data.tar.gz` | ~X GB | Coming soon |
+
+
+#### 3. Extract
+
 ```bash
-tar xzvf XMR_reproduce_data.tar.gz
+tar xzvf nc_data.tar.gz
+tar xzvf real_data_CSA_AFR_data.tar.gz
+tar xzvf real_data_EAS_data.tar.gz
+tar xzvf sim_data.tar.gz
 ```
 
-After extraction, your directory should look like:
-```
-XMR_reproduce/          ← this is the root directory
-├── nc/
-│   ├── 1kg_pops/       ← (from data archive)
-│   ├── raw_data/       ← (from data archive)
-│   ├── formatted_data/ ← (from data archive)
-│   ├── 01_format_data.R
-│   └── ...
-├── real_data_EAS/
-│   └── ...
-└── sim/
-    └── ...
-```
+The data files will be automatically merged into the existing 
+code directories.
 
-### 3. Run the analysis
+#### 4. External resources (download separately)
+
+The following large reference files are not included in the 
+archives. Please download them manually:
+
+- **1000 Genomes PLINK files**: download from [link] 
+  and place in `nc/1kg_pops/`
+- **PLINK software**: download from 
+  [https://www.cog-genomics.org/plink2](https://www.cog-genomics.org/plink2)
+
+
+#### 5. Run the analysis
 All scripts assume the **working directory is the repository root** (`XMR_reproduce/`).
 
 ```r
 # In R
 setwd("/path/to/XMR_reproduce")  # set to your local path
-source("nc/01_format_data.R")
+source("nc/format_data.R")
 ```
-
-
 
 
 ## Reference
