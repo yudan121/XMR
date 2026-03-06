@@ -197,7 +197,7 @@ All scripts assume the **working directory is the repository root** (`XMR_reprod
 ```r
 # In R
 setwd("/path/to/XMR_reproduce")  # set to your local path
-source("nc/format_data.R")
+source("nc/code/run_XMR_AFR.R")
 ```
 
 To run XMR and the 15 compared methods, install the required R packages first:
