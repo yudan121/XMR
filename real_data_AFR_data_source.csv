@@ -8,7 +8,7 @@ C-reactive protein,30710,400094,400094,NA,https://pan-ukb-us-east-1.s3.amazonaws
 LDL direct,30780,400223,400223,NA,https://pan-ukb-us-east-1.s3.amazonaws.com/sumstats_flat_files/biomarkers-30780-both_sexes-irnt.tsv.bgz,LDL direct,30780,6200,6200,NA,https://pan-ukb-us-east-1.s3.amazonaws.com/sumstats_flat_files/biomarkers-30780-both_sexes-irnt.tsv.bgz
 Triglycerides,30870,400639,400639,NA,https://pan-ukb-us-east-1.s3.amazonaws.com/sumstats_flat_files/biomarkers-30870-both_sexes-irnt.tsv.bgz,Triglycerides,30870,6211,6211,NA,https://pan-ukb-us-east-1.s3.amazonaws.com/sumstats_flat_files/biomarkers-30870-both_sexes-irnt.tsv.bgz
 Neutrophill count,30140,407265,407265,NA,https://pan-ukb-us-east-1.s3.amazonaws.com/sumstats_flat_files/continuous-30140-both_sexes-irnt.tsv.bgz,Neutrophill count,30140,6262,6262,NA,https://pan-ukb-us-east-1.s3.amazonaws.com/sumstats_flat_files/continuous-30140-both_sexes-irnt.tsv.bgz
-Albumin,30600,367192,367192,NA,https://pan-ukb-us-east-1.s3.amazonaws.com/sumstats_flat_files/biomarkers-30600-both_sexes-irnt.tsv.bgz,Serum albumin levels,alb,13125,13125,NA,https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST009001-GCST010000/GCST009048/albuminannotated.txt.gz
+Albumin,30600,315268,315268,NA,http://www.nealelab.is/uk-biobank,Serum albumin levels,alb,13125,13125,NA,https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST009001-GCST010000/GCST009048/albuminannotated.txt.gz
 Asthma,J45,420531,31030,389501,https://pan-ukb-us-east-1.s3.amazonaws.com/sumstats_flat_files/icd10-J45-both_sexes.tsv.bgz,Asthma,J45,6636,573,6063,https://pan-ukb-us-east-1.s3.amazonaws.com/sumstats_flat_files/icd10-J45-both_sexes.tsv.bgz
 Chronic ischaemic heart disease,I25,420531,31148,389383,https://pan-ukb-us-east-1.s3.amazonaws.com/sumstats_flat_files/icd10-I25-both_sexes.tsv.bgz,Chronic ischaemic heart disease,I25,6636,302,6334,https://pan-ukb-us-east-1.s3.amazonaws.com/sumstats_flat_files/icd10-I25-both_sexes.tsv.bgz
 T2D,250.2,418949,22768,396181,https://pan-ukb-us-east-1.s3.amazonaws.com/sumstats_flat_files/phecode-250.2-both_sexes.tsv.bgz,T2D,250.2,6589,796,5793,https://pan-ukb-us-east-1.s3.amazonaws.com/sumstats_flat_files/phecode-250.2-both_sexes.tsv.bgz
@@ -16,4 +16,5 @@ hypertension,20002_1065,420473,109307,311166,https://pan-ukb-us-east-1.s3.amazon
 Disorders of lipoid metabolism,272,420531,44134,376397,https://pan-ukb-us-east-1.s3.amazonaws.com/sumstats_flat_files/phecode-272-both_sexes.tsv.bgz,Disorders of lipoid metabolism,272,6636,744,5892,https://pan-ukb-us-east-1.s3.amazonaws.com/sumstats_flat_files/phecode-272-both_sexes.tsv.bgz
 ,,,,,,,,,,,
 ,,,,,,,,,,,
+
 Note: the SHBG trait used in Fig. 6E for EAS is also sourced from the above Pan-UKBB EUR link,,,,,,,,,,,
