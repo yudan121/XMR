@@ -182,7 +182,7 @@ Alternatively, you can **skip the raw data step** and start directly from our pr
 | `sim_data.tar.gz` | ~28 MB | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18872086.svg)](https://doi.org/10.5281/zenodo.18872086)|
 | `nc_data.tar.gz` | ~6.8 GB | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18872963.svg)](https://doi.org/10.5281/zenodo.18872963) |
 | `real_data_EAS.tar.gz` | ~5.8 GB | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18874873.svg)](https://doi.org/10.5281/zenodo.18874873) |
-| `real_data_CSA_AFR.tar.gz` | ~3.9 GB | [Google Drive](https://drive.google.com/file/d/1zSE8VoTn2X6EbhHOsTpdKuqGctSgi5AD/view?usp=drive_link) |
+| `real_data_CSA_AFR.tar.gz` | ~4.2 GB | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18959822.svg)](https://doi.org/10.5281/zenodo.18959822) |
 
 ```bash
 tar xzvf sim_data.tar.gz
