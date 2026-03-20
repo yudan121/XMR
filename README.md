@@ -102,15 +102,14 @@ Both can be estimated using bivariate LD score regression.
 - `beta.se`: standard error of the causal effect estimate
 - `beta.pvalue`: p-value for the causal effect
 - `tau.sq`: estimated variance of the pleiotropic effect
-- `sigmax11`, `sigmax12`, `sigmax22`: estimated elements of the SNP–trait covariance matrix
+- `SigmaX`: estimated SNP–trait covariance matrix
+- `post`: posterior probabilities of IV validity for each SNP
 - `nIV`: number of IVs used
-- `IVsignal.sum`: total IV strength
 - `nvalid`: estimated number of valid IVs
 - `pi0`: estimated proportion of valid IVs
 - `Threshold`: IV selection threshold
-- `exp_N1`: sample size of the exposure from the auxiliary population
-- `exp_N2`: sample size of the exposure from the target population
-- `modified_threshold`: modified threshold to correct selection bias
+- `fit1_elbos`, `fit2_elbos`: evidence lover bounds in the two stages
+- `fit1_likelis`, `fit2_likelis`: likelihoods in the two stages
 
 For the LDLC → MI example, the expected output is:
 - `beta` = 0.1948, `beta.se`= 0.0384, `beta.pvalue` = 3.7994e-07, `nIV` = 387, `nvalid` = 123.8297
@@ -256,17 +255,10 @@ install.packages("robustbase")
 
 ## System Requirements
 
-### Software dependencies
-- R (>= 4.2.0)
-- R packages: Matrix, expm, stats, mvtnorm, dplyr, reshape2, glmnet, MASS, data.table, readr, magrittr, doParallel, XMAP, MRAPSS
-
-### Tested on
-- Intel® Xeon® CPU E5-2699 v4 @ 2.20 GHz
-- R 4.2.2
-
-### Hardware
-- No non-standard hardware required.
-
+- **Software dependencies**: R (>= 4.2.0); R packages: Matrix, expm, stats, mvtnorm, dplyr, reshape2, glmnet, MASS, data.table, readr, magrittr, doParallel, XMAP, MRAPSS
+- **Tested on**: Intel® Xeon® CPU E5-2699 v4 @ 2.20 GHz, R 4.2.2
+- **Hardware**: No non-standard hardware required. A standard desktop computer is sufficient.
+  
 
 ## Reference
 
