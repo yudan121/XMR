@@ -15,21 +15,6 @@ XMR further corrects bias introduced by IV selection and LD clumping to reduce f
 **(C)** Selection bias and confounding factors contribute to the observed SNP–trait associations.
 **(D)** An illustrative example of causal inference between SHBG (sex hormone-binding globulin) and T2D (type 2 diabetes) in an African population, using conventional two-sample MR methods (left) and XMR (right). The estimated causal effect is shown as a red line, with the 95% confidence interval shaded in transparent red. Triangles represent observed SNP effect sizes ($\hat{\gamma}\_{2,j}$ and $\hat{\Gamma}\_{2,j}$), colored by their posterior probability of IV validity ($Z\_j = 1$ in dark blue; $Z\_j = 0$ in light blue).
 
-## System Requirements
-
-### Software dependencies
-- R (>= 4.2.0)
-- R packages: Matrix, expm, stats, mvtnorm, dplyr, reshape2, glmnet, MASS, data.table, readr, magrittr, doParallel, XMAP, MRAPSS
-
-### Tested on
-- Intel® Xeon® CPU E5-2699 v4 @ 2.20 GHz
-- R 4.2.2
-
-### Hardware
-- No non-standard hardware required.
-- A standard desktop computer is sufficient.
-
-
 ## Installation
 
 ```r
@@ -268,6 +253,19 @@ devtools::install_github("rondolab/MR-PRESSO")
 install.packages("MendelianRandomization")
 install.packages("robustbase")
 ```
+
+## System Requirements
+
+### Software dependencies
+- R (>= 4.2.0)
+- R packages: Matrix, expm, stats, mvtnorm, dplyr, reshape2, glmnet, MASS, data.table, readr, magrittr, doParallel, XMAP, MRAPSS
+
+### Tested on
+- Intel® Xeon® CPU E5-2699 v4 @ 2.20 GHz
+- R 4.2.2
+
+### Hardware
+- No non-standard hardware required.
 
 
 ## Reference
